@@ -30,6 +30,7 @@ img {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
+  letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,15 +105,12 @@ body {
 
 .count p {
   font-size: 11px;
-  letter-spacing: 1.5px;
   font-weight: 400;
   padding-top: 3px;
   color: var(--darkGrayishBlue);
 }
 
 @media (max-width: 450px) {
-  body {
-  }
   .main-area {
     max-width: 375px;
     height: 655px;
