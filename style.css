@@ -1,0 +1,128 @@
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-area {
+  width: 1440px;
+  height: 720px;
+  background: var(--darkCyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+
+  background-position: right 748px bottom 250px, left 692px top 374px;
+  position: fixed;
+}
+.card {
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.card-header img {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-middle {
+  text-align: center;
+  border-bottom: 1px solid hsl(0, 0%, 91%);
+}
+.card-middle img {
+  position: relative;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%);
+  padding: 5px;
+  top: -58px;
+}
+
+.card-middle h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--veryDarkDesaturatedBlue);
+  margin-top: -44px;
+}
+.card-middle h1 span {
+  color: var(--darkGrayishBlue);
+  font-weight: 400;
+  padding-left: 5px;
+}
+.card-middle p {
+  color: var(--darkGrayishBlue);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 0 24px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 53px 24px 48px;
+}
+
+.count {
+  text-align: center;
+}
+.count h2 {
+  font-size: 18px;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.count p {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  padding-top: 3px;
+  color: var(--darkGrayishBlue);
+}
+
+@media (max-width: 450px) {
+  body {
+  }
+  .main-area {
+    max-width: 375px;
+    height: 655px;
+    background-position: right 165px bottom 385px, left 165px top 350px;
+    background-size: 635px;
+  }
+  .card {
+    width: 325px;
+  }
+  .card-bottom {
+    padding: 24px 54px 24px 42px;
+  }
+}
